@@ -53,7 +53,7 @@ With network performance logs, you can measure the utilization of the card, and 
 
 Uptime means the time your machine has been running till now. It is actually a measure of system reliability to show you exactly how long your computer has been working and available since last startup.
 
-###### Find Windows Uptime in Task Manager
+###### Find Windows Uptime in Task Manager  [Window Task Manager guide](https://www.howtogeek.com/405806/windows-task-manager-the-complete-guide/)
 1. Move your cursor onto the taskbar, and then right click on it. (Solve the Windows 10 taskbar not working issue.)
 1. Choose Task Manager from the context menu you see.
 1. If you see a small Task Manager window, please click More details. (If you see a full window, skip this step.)
