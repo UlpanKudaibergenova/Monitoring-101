@@ -44,7 +44,9 @@ With network performance logs, you can measure the utilization of the card, and 
 
 ~ Memory – Memory monitoring in other components determines the immediate stop of a system due to memory overflow or misdirection for a single application.
 
-~ Swap – This is virtual memory created by the system and allocated to disk to be used when necessary. Its high utilization can indicate that the amount of memory for the server is insufficient.
+~ Inode usage -In a Linux server, everything is a file. Linux systems use inode numbers instead of file names to identify files/directories while they are being created. These file systems contain two parts: metadata and actual data. Each file has an inode that contains metadata about the file. An inode stores all the information regarding the file, including file size, file location, device ID, user ID, group ID, file access privileges, and time stamps. Each inode has an inode number that is unique within a file system.
+
+~ Cron jobs -Cron is one of the most useful metrics in Linux, as it allows you to run automated processes, like backups, schedule updates, and file synchronization, at specific periods. The cron jobs can be set to run by the minute, hour, and day of the week or month. Since cron is a daemon that is scheduled to run tasks, it wakes up every minute to check scheduled tasks. Tracking how long your cron jobs usually run with the help of an efficient Linux server monitoring tool will help you receive customized alerts in case they run too slowly.
  
 ----------------------------------
 - How can you check the uptime of a machine? [Check windows uptime](https://www.minitool.com/news/how-to-check-windows-uptime.html)
