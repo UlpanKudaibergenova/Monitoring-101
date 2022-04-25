@@ -6,7 +6,16 @@ One of the most important responsibilities a system administrator has, is monito
 This challenge is divided in two tasks, the first one having you research how to monitor a Linux system as well as what to look for when doing so. You will have to take note of all your findings in a text file (EX: markdown) while being as exhaustive as possible (what to monitor, how to monitor it, commands used, ...). Try to answer, but don't limit yourself to, the questions below to guide you through the research process:
 
 - What are the main area of concern when monitoring a system? (EX: CPU load, disk usage, ...)
-- How can you check what are the most memory intensive running processes?
+---------
+- How can you check what are the most memory intensive running processes? [Find top running process by memory usage](https://www.linuxshelltips.com/find-top-running-processes-by-memory-usage/)
+
+*You will use the **top** command-line utility, which is a task manager in Unix and Linux systems that shows all the details about running processes.*
+
+To show the most memory consuming processes, we make use of the **'-o'** flag at the top to sort the output.
+
+ top -o %MEM   - command to find the process using highest memory usage
+
+-----------------
 - What are log files? Where can you fin them on a typical Linux system?
 
 LOG is the file extension for an automatically produced file that contains a record of events from certain software and operating systems. While they can contain a number of things, log files are often used to show all events associated with the system or application that created them. For example, your backup program might keep log files showing exactly what happened (or didn’t happen) during a backup. Windows keeps all kinds of log files for its various services.
@@ -17,6 +26,7 @@ While most log files contain the .log file extension, sometimes applications may
 
 *Almost all logfiles are located under **/var/log** directory and its sub-directories on Linux. You can change to this directory using the **cd command**.*
 
+---------------
 - How can you check who where the last connected users, what they did, when they left?
 - What are the different metrics of health and performance of a system?
 ----------------------------------
