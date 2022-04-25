@@ -8,10 +8,22 @@ This challenge is divided in two tasks, the first one having you research how to
 - What are the main area of concern when monitoring a system? (EX: CPU load, disk usage, ...)
 - How can you check what are the most memory intensive running processes?
 - What are log files? Where can you fin them on a typical Linux system?
+
+LOG is the file extension for an automatically produced file that contains a record of events from certain software and operating systems. While they can contain a number of things, log files are often used to show all events associated with the system or application that created them. For example, your backup program might keep log files showing exactly what happened (or didn’t happen) during a backup. Windows keeps all kinds of log files for its various services.
+
+The point of a log file is to keep track of what’s happening behind the scenes and if something should happen within a complex system, you have access to a detailed list of events that took place before the malfunction. Basically, whatever the application, server, or OS thinks needs to be recorded.
+
+While most log files contain the .log file extension, sometimes applications may use the .txt extension or a different proprietary extension, instead.
+
+----
+Almost all logfiles are located under **/var/log** directory and its sub-directories on Linux. You can change to this directory using the **cd command**.
+
+----
 - How can you check who where the last connected users, what they did, when they left?
 - What are the different metrics of health and performance of a system?
 - How can you check the uptime of a machine?
 - How can you assess the network traffic?
+
 The second task is meant to serve as practice and will have you, in a different file, write a report with as many relevant information (what would make sense in a report) as you can muster on a system you manage. It most preferably would be a remote machine, but it can also be your local machine as this is just practice.
 
 To validate the challenge you will have to make a pull request containing both files (research notes and system report) in this folder of your training's repository.
