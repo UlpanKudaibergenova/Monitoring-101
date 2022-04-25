@@ -15,10 +15,8 @@ The point of a log file is to keep track of what’s happening behind the scenes
 
 While most log files contain the .log file extension, sometimes applications may use the .txt extension or a different proprietary extension, instead.
 
-----
-Almost all logfiles are located under **/var/log** directory and its sub-directories on Linux. You can change to this directory using the **cd command**.
+*Almost all logfiles are located under **/var/log** directory and its sub-directories on Linux. You can change to this directory using the **cd command**.*
 
-----
 - How can you check who where the last connected users, what they did, when they left?
 - What are the different metrics of health and performance of a system?
 ----------------------------------
@@ -35,7 +33,12 @@ Uptime means the time your machine has been running till now. It is actually a m
 1. Look at the bottom left section in the right pane.
 1. The Up-time value will shows in days: hours: minutes: seconds in real-time.
 
-##### 
+##### Check System Uptime through PowerShell
+1. Right click on the Windows button in the lower left corner of your PC screen.
+1. Choose Windows PowerShell or Windows PowerShell (Admin) from the list.
+1. Type (get-date) – (gcim Win32_OperatingSystem).LastBootUpTime into PowerShell window and press Enter on the keyboard.
+1. Now, you can see how much time your PC is running in total (days, hours, minutes and seconds are displayed separately).
+
 -----------------------
 - How can you assess the network traffic?
 
