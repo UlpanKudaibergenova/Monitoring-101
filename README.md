@@ -28,7 +28,24 @@ While most log files contain the .log file extension, sometimes applications may
 
 ---------------
 - How can you check who where the last connected users, what they did, when they left?
+-----------
 - What are the different metrics of health and performance of a system?
+
+*Metrics used for monitoring*
+
+~ CPU – It is crucial to monitor CPU, as it can reach a high utilization rate and temperature. It can have multiple cores, but an application can be directed to only one of these cores, pointing to a dangerous hardware behavior. (Central processing unit)
+
+~ Load – This specifies whether the CPU is being used, how much is being executed, and how long it has been running.
+
+~ Disk Capacity and IO – Disk capacity is especially important when it comes to image servers, files, and VMs, as it can directly affect system shutdown, corrupt the operating system, or cause extreme IO slowness. Along with disk monitoring, it’s possible to plan for an eventual change or addition of a disk, and to verify the behavior of a disk that demonstrates signs of hardware failure.
+
+~ Network – When it comes to DNS, DHCP, firewall, file server, and proxy, it is extremely important to monitor network performance as input and output of data packets. 
+With network performance logs, you can measure the utilization of the card, and create a plan to suit the application according to the use of the network.
+
+~ Memory – Memory monitoring in other components determines the immediate stop of a system due to memory overflow or misdirection for a single application.
+
+~ Swap – This is virtual memory created by the system and allocated to disk to be used when necessary. Its high utilization can indicate that the amount of memory for the server is insufficient.
+ 
 ----------------------------------
 - How can you check the uptime of a machine? [Check windows uptime](https://www.minitool.com/news/how-to-check-windows-uptime.html)
 
